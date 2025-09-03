@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #e0e6f1;
+}
+
+.hero {
+    background-color: #161b22;
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    color: #89a7d3;
+}
+
+.descriptionOfCourse {
+    font-size: 1.2rem;
+    color: #e0e6f1;
+}
+
+.creator, .ratings {
+    font-size: 1rem;
+    color: #8b949e;
+}
+
+.pricingDetails {
+    background-color: #232b38;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pricingDetails h2 {
+    font-size: 2rem;
+    color: #89a7d3;
+    margin-top: 1rem;
+}
+
+.cta-button {
+    padding: 0.7rem 1.5rem;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.whatYouLearn {
+    background-color: #161b22;
+    padding: 2rem 5%;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatYouLearn h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #e0e6f1;
+}
+
+ul {
+    list-style-type: '👉';
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul li {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.nextSection {
+    margin: 3rem 10%;
+}
+
+.courseContent {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.dropdown-section {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-title {
+    background-color: #161b22;
+    color: #e0e6f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-content {
+    background-color: #232b38;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.dropdown-content p {
+    padding-top: 1rem;
+    color: #8b949e;
+}
+
+.dropdown-title::after {
+    content: '+';
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.dropdown-section[open] .dropdown-title::after {
+    content: '-';
+    transform: rotate(0deg);
+}
