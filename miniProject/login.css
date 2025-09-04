@@ -1,43 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-image: url('loginbg.jpg');
-    background-size: contain;
+body {
+    background-color: #0d1117;
+    color: #e0e6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
 }
 
-.box{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(244, 244, 244,0.7);
-    margin-top: 25vh;
-    background: rgba(255, 255, 255, 0.2);
-    height: 50vh;
-    width: 25vw;
+.box {
+    background-color: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    justify-self: center;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    z-index: 1; 
+    gap: 1.5rem;
 }
 
-#password,#email{
-    display: block;
-    padding: 0.2rem;
-    margin-bottom: 3vh;
-    border-radius: 6px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-button{
-    align-self: center;
-    width: 14vw;
-    border-radius: 6px;
-    padding: 0.2rem;
-    color: rgb(244, 244, 244);
-    background-color: rgba(4, 53, 121, 0.447);
+label {
+    font-weight: bold;
+    color: #8b949e;
+}
+
+input {
+    background-color: #0d1117;
+    border: 1px solid #364052;
+    border-radius: 5px;
+    padding: 0.7rem;
+    color: #e0e6f1;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #8b949e;
+}
+
+.submit-signup {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-signup:hover {
+    background: linear-gradient(45deg, #89a7d3, #4c72a8);
 }
