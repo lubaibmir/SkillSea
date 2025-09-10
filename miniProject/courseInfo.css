@@ -79,6 +79,12 @@ img {
     color: #fff;
     transition: background-color 0.3s;
 }
+.cta-button.ctaBtnAfter {
+   background: linear-gradient(45deg, #4c617c, #0e1116);
+}
+.cta-button.ctaBtnAfter:hover{
+   background: linear-gradient(45deg, #4c617c, #0e1116);
+}
 
 .whatYouLearn {
     background-color: #161b22;
