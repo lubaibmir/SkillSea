@@ -9,6 +9,7 @@ elem.onclick=function() {
 };
 
 
+
 function updateUserAction() {
   const userActions = document.querySelector(".user-actions");
   if (!userActions) return;
@@ -39,3 +40,4 @@ if(submitSignup){
         }
     })
 }
+
