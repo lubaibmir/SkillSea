@@ -1,0 +1,204 @@
+
+* {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117; 
+    color: #e0e6f1;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #161b22; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #364052;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 30%;
+}
+
+.dropdown-search {
+    border: none;
+    background-color: #161b22;
+    color: #e0e6f1;
+    padding: 0.7rem 1.5rem;
+    flex-grow: 1;
+    cursor: pointer;
+    outline: none;
+    appearance: none; 
+}
+
+.search-button {
+    background-color: #232b38;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #e0e6f1;
+}
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-button, .signup-button, .cta-button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.login-button:hover, .signup-button:hover, .cta-button:hover {
+    background: linear-gradient(45deg, #89a7d3, #4c72a8);
+}
+
+.outer {
+    background-color: #0d1117;  /* Match body background */
+    display: flex;
+    flex-wrap: wrap;           /* To handle responsiveness */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1200px;          /* Maximum width to avoid stretching too much on large screens */
+    margin: 50px auto;
+    min-height: 600px;
+}
+
+.innerOne, .innerTwo {
+    background-color: #161b22;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #e0e6f1;
+    width: 45%;                 /* Allow two columns side by side */
+    min-width: 300px;          /* Minimum for mobile responsiveness */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.order-summary-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.summary-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.summary-text pre {
+    margin: 0;
+    font-size: 1rem;
+    color: #e0e6f1;
+}
+
+.innerOne input[type="text"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #364052;
+    background-color: #0d1117;
+    color: #e0e6f1;
+}
+
+.innerOne label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.innerOne input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.summary h1, .innerTwo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    background-color: #161b22;
+    padding: 3rem 5%;
+    border-top: 1px solid #364052;
+    color: #8b949e;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #4c72a8, #89a7d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1rem;
+    color: #8b949e;
+    line-height: 1.5;
+}
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #e0e6f1;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #364052;
+    font-size: 0.9rem;
+    color: #8b949e;
+}

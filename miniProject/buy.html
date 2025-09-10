@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyNow</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SkillSea</div>
+        <div class="search-container">
+            <select name="categories" id="categories" class="dropdown-search">
+                <option value="">Search for anything...</option>
+                <option value="technical">Technical</option>
+                <option value="business">Business</option>
+                <option value="marketing">Marketing</option>
+                <option value="design">Design</option>
+            </select>
+            <button class="search-button">🔍</button>
+        </div>
+        <div class="user-actions">
+            <button class="login-button">Log In</button>
+            <button class="signup-button">Sign Up</button>
+        </div>
+    </header>
+    <main>
+        <div class="outer">
+            <div class="innerOne">
+                <form>
+                    <label for="address">Billing Address :</label>
+                    <input type="text" id="address" placeholder="Enter your Billing Address :">
+                    <br>
+                    <label for="pincode">Pincode :</label>
+                    <input type="text" id="pincode" placeholder="Enter your pincode">
+                    <br>
+                    <label for="payment">Payement Methods :</label>
+                    <br>
+                    <label for="payment"><input type="radio" id="payment">Cards</label>
+                    <br>
+                    <label for="payment"><input type="radio" id="payment">UPI</label>
+                    <br>
+                    <label for="payment"><input type="radio" id="payment">Net Banking</label>
+                    <br>
+                    <label for="payment"><input type="radio" id="payment">Mobile Wallets</label>
+                    <br>
+                </form>
+                <div class="summary">
+                    <h1>Order Details </h1>
+                    <pre>Complete Web Development Course        $200</pre>
+                </div>
+            </div>
+            <div class="innerTwo">
+                <h1>Order Summary</h1>
+                <div class="order-summary-content">
+                    <img src="WebDev.jpg" alt="Course Thumbnail" class="summary-image">
+                    <div class="summary-text">
+                        <pre>Original Price :                       $200</pre>
+                        <pre>Discounts (20% off):               $160</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>SkillZ is dedicated to providing high-quality online education to learners worldwide. Our mission is to empower individuals to achieve their professional goals.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: contact@skillz.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 SkillZ | All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
