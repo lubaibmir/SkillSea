@@ -75,6 +75,15 @@ header {
     background: linear-gradient(45deg, #4c72a8, #89a7d3);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+.cart-icon-btn {
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+.cart-icon-btn img {
+  width: 30px;
+  height: auto;
+}
 
 .login-button:hover, .signup-button:hover, .cta-button:hover {
     background: linear-gradient(45deg, #89a7d3, #4c72a8);

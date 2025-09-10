@@ -1,7 +1,24 @@
-const courseInfo = document.querySelector(".course-card");
+const courseInfo = document.querySelector(".one");
 if (courseInfo) {
   courseInfo.addEventListener("click", function () {
+    sessionStorage.setItem('courseOn', '1');
     window.location.href = "courseInfo.html";
+  });
+}
+
+const courseInfo2 = document.querySelector(".two");
+if (courseInfo2) {
+  courseInfo2.addEventListener("click", function () {
+    sessionStorage.setItem('courseOn', '2');
+    window.location.href = "datasc.html";
+  });
+}
+
+const courseInfo3 = document.querySelector(".three");
+if (courseInfo3) {
+  courseInfo3.addEventListener("click", function () {
+    sessionStorage.setItem('courseOn', '3');
+    window.location.href = "marketing.html";
   });
 }
 
@@ -33,8 +50,13 @@ document.addEventListener("DOMContentLoaded",()=>{
     const loginBtn= document.querySelector(".login-button");
     const signupBtn= document.querySelector(".signup-button");
     if(sessionStorage.getItem("isLoggedIn")==="true"){
-        loginBtn.innerHTML = "<img src='shopping-cart.png' width='30px'>";
-        signupBtn.innerHTML = "<img src='user.png' width='30px'>";
+       
+        loginBtn.innerHTML = "<img src='shopping-cart.png'>";
+        loginBtn.classList.add("cart-icon-btn");
+
+        signupBtn.innerHTML = "<img src='user.png'>";
+        signupBtn.classList.add("cart-icon-btn");
+
 
         loginBtn.addEventListener("click",()=>{
             window.location.href="cart.html";
@@ -58,5 +80,18 @@ cartBtn.addEventListener("click", () => {
     cartBtn.classList.add("ctaBtnAfter");
   }
 });
+
+// courseInfo.js
+document.addEventListener('DOMContentLoaded', () => {
+  const buyBtn = document.querySelector('.buyBtn');
+  if (buyBtn) {
+    buyBtn.addEventListener('click', () => {
+      window.location.href = 'buy.html';
+    });
+  }
+});
+
+
+
 
 
