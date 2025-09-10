@@ -91,6 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+//cart
+window.onload = function () {
+    const keepShoppingBtn = document.getElementById("keepShopping");
+
+    if (keepShoppingBtn) {
+        keepShoppingBtn.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    }
+};
 
 
 
