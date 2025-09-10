@@ -8,19 +8,22 @@
 </head>
 <body>
     <div class="box">
-        <form>
+        <form id="signupForm">
             <label for="email">Email Id :</label>
-            <input type="text" id="email" placeholder="Enter your email address">
+            <input type="text" id="email" placeholder="Enter your email address" required>
             <label for="username">Username :</label>
-            <input type="text" id="username" placeholder="Create a username">
+            <input type="text" id="username" placeholder="Create a username" required>
             <label for="pass">6 digit password :</label>
-            <input type="password" id="pass" placeholder="Create a password">
+            <input type="password" id="pass" placeholder="Create a password" required>
             <label for="password">Confirm Password :</label>
-            <input type="password" id="password" placeholder="Confirm your password">
-            <button type="button" class="submit-signup">Sign Up</button>
+            <input type="password" id="password" placeholder="Confirm your password" required>
+            <button type="submit" class="submit-signup">Sign Up</button>
         </form>
         
     </div>  
-      <script src="index.js"></script>
+      
+      <script src="signup.js"></script>
+      
+      
 </body>
 </html>

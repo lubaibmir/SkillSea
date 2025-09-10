@@ -69,17 +69,21 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 //courseinfo
 
-const cartBtn = document.querySelector(".cart-btn");
+document.addEventListener("DOMContentLoaded",()=>{
+    const cartBtn = document.querySelector(".cart-btn");
 
-cartBtn.addEventListener("click", () => {
-  if (cartBtn.classList.contains("ctaBtnAfter")) {
-    cartBtn.innerHTML = "Add to cart";
-    cartBtn.classList.remove("ctaBtnAfter");
-  } else {
-    cartBtn.innerHTML = "Added to cart";
-    cartBtn.classList.add("ctaBtnAfter");
-  }
-});
+    if(cartBtn){
+            cartBtn.addEventListener("click", () => {
+        if (cartBtn.classList.contains("ctaBtnAfter")) {
+            cartBtn.innerHTML = "Add to cart";
+            cartBtn.classList.remove("ctaBtnAfter");
+        } else {
+            cartBtn.innerHTML = "Added to cart";
+            cartBtn.classList.add("ctaBtnAfter");
+        }
+        });
+    }
+})
 
 // courseInfo.js
 document.addEventListener('DOMContentLoaded', () => {
